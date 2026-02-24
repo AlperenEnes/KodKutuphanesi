@@ -1,6 +1,6 @@
 # Kod Kütüphanesi 
 A simple, lightweight desktop application to store, manage, and organize your C# code snippets.
-You can download the setup file by clicking **[here]**(https://github.com/AlperenEnes/KodKutuphanesi/releases/latest/download/Kodkut_setup.exe)
+You can download the setup file by clicking **[here](https://github.com/AlperenEnes/KodKutuphanesi/releases/latest/download/Kodkut_setup.exe)**
 
 ## Features
 * **Syntax Highlighting**: Beautifully formatted C# code thanks to PrismJS.
