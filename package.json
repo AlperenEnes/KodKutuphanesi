@@ -1,0 +1,66 @@
+{
+  "name": "kod_kutuphanesi",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["electron", "code", "library","cs"],
+  "author": { 
+    "name": "Kod Kütüphanesi - AE",
+    "url": "https://github.com/AlperenEnes/KodKutuphanesi"
+  },
+  "license": "ISC",
+  "description": "C# için Türkçe kod kütüphanesi uygulaması",
+  "devDependencies": {
+    "electron": "^39.2.7",
+    "electron-builder": "^25.1.8"
+  },
+  "dependencies": {
+    "prismjs": "^1.30.0"
+  },
+  "build": {
+    "appId": "com.kodkut.codelibrary",
+    "productName": "Kod Kütüphanesi",
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer.js",
+      "index.html",
+      "styles.css",
+      "data.json",
+      "favorites.json",
+      "history.json",
+      "node_modules/**/*",
+      "kl.ico"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "icon":"kl.ico",
+      "executableName": "KodKutuphanesi",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "artifactName": "Kodkut_setup.exe"
+    }
+  }
+}

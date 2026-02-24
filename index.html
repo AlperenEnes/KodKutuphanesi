@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>KodKüt</title>
+  <link rel="stylesheet" href="styles.css">
+  <link id="prism-theme" rel="stylesheet" href="node_modules/prismjs/themes/prism-tomorrow.css">
+</head>
+<body>
+  <!-- Sol tarafta menü var. Buradan düğmelere basıyoruz. -->
+  <div class="sidebar">
+    <button class="toggle-handle" id="menu-toggle">
+      <span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 12H21M3 6H21M3 18H21" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      </span>
+    </button>
+    <!-- Menüde 3 düğme var: Tüm Kodlar, Favoriler, Geçmiş -->
+    <div class="sidebar-menu"> 
+      <button id="btnCodes">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="4 17 10 11 4 5"></polyline>
+            <line x1="12" y1="19" x2="20" y2="19"></line>
+          </svg> Tüm Kodlar
+        </span>
+        <span class="badge" id="codeCountBadge">0</span>
+      </button>
+      <button id="btnFavs">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg> Favoriler
+        </span>
+        <span class="badge" id="favCountBadge">0</span>
+      </button>
+      <button id="btnHistory">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+            <polyline points="3 3 3 8 8 8"></polyline>
+            <polyline points="12 7 12 12 15 15"></polyline>
+          </svg> Geçmiş
+        </span>
+        <span class="badge" id="histCountBadge">0</span>
+      </button>
+      <!-- Buraya bir şey yazınca listede arama yapar. -->
+      <input id="search" autocomplete="off" placeholder="Ara...">
+    </div>
+    <div class="sidebar-content"> 
+    <!-- Burada kodların listesi görünür. -->
+    <ul id="list">
+    <script src="renderer.js"></script>
+    </ul>
+    </div>
+  </div>
+  <!-- Sağ tarafta içerik alanı var. Seçtiğimiz kodun bilgileri burada. -->
+  <div class="content">
+    <div class="topbar">
+      <!-- Bu yıldız, seçilen kodu favori yapar. -->
+      <svg id="topbarStar" class="star active" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" >
+        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+      </svg>
+      <p class="topbarName" id="topbarName">KodKüt</p>
+      <span id="btnTheme"></span>
+    </div>
+    <div class="info">
+    <!-- Büyük başlık -->
+    <h1>C# Kod Kütüphanesi</h1>
+    <!-- Küçük açıklama yazısı -->
+    <p class="description">C# Eğitim Öğretim için tasarlanmış uygulamamıza hoş geldiniz!</p>
+    <!-- Burada örnek kodu gösteriyoruz. -->
+    <pre>
+      <code class="language-csharp">
+// Bu uygulama, C# programlama dilini öğrenmek ve 
+// kendini geliştirmek isteyenler için geliştirilmiştir.
+
+// Emeği Geçenler
+//    Alperen Enes         Ekrem Ali
+// Frontend - Backend     Veri Girişi
+
+    </code>
+  </pre>
+    </div>
+  </div>
+  <script src="node_modules/prismjs/prism.js"></script>
+  <script src="node_modules/prismjs/components/prism-csharp.js"></script>
+</body>
+</html>

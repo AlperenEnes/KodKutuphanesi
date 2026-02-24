@@ -1,0 +1,380 @@
+[
+  {
+    "id": "1",
+    "name": "Değişken Tanımlama (int)",
+    "description": "Tamsayı türünde değişken tanımlar.",
+    "example": "int sayi = 10;\n// int: Tam sayı türü\n// sayi: Değişken adı\n// 10: Başlangıç değeri"
+  },
+  {
+    "id": "2",
+    "name": "String Değişken",
+    "description": "Metin tutan değişken.",
+    "example": "string ad = \"Ali\";\n// string: Metin türü\n// \"Ali\": Çift tırnak metin belirtir"
+  },
+  {
+    "id": "3",
+    "name": "Kullanıcıdan Veri Alma",
+    "description": "Klavyeden girilen veriyi alır.",
+    "example": "string giris = Console.ReadLine();\n// ReadLine: Kullanıcıdan giriş bekler\n// giris: Alınan metni saklar"
+  },
+  {
+    "id": "4",
+    "name": "Toplama İşlemi",
+    "description": "İki sayıyı toplar.",
+    "example": "int toplam = 5 + 3;\n// + : Toplama operatörü"
+  },
+  {
+    "id": "5",
+    "name": "Çıkarma İşlemi",
+    "description": "Çıkarma yapar.",
+    "example": "int fark = 10 - 4;\n// - : Çıkarma operatörü"
+  },
+  {
+    "id": "6",
+    "name": "Çarpma İşlemi",
+    "description": "Çarpma işlemi.",
+    "example": "int carpim = 4 * 5;\n// * : Çarpma operatörü"
+  },
+  {
+    "id": "7",
+    "name": "Bölme İşlemi",
+    "description": "Ondalıklı bölme yapar.",
+    "example": "double bolum = 10.0 / 3;\n// double: Ondalıklı sonuç için kullanılır"
+  },
+  {
+    "id": "8",
+    "name": "If Koşulu",
+    "description": "Şart doğruysa çalışır.",
+    "example": "if (sayi > 0)\n{\n\tConsole.WriteLine(\"Pozitif\");\n}"
+  },
+  {
+    "id": "9",
+    "name": "If-Else",
+    "description": "Alternatif durum kontrolü.",
+    "example": "if (sayi > 0)\n{\n\tConsole.WriteLine(\"Pozitif\");\n}\nelse\n{\n\tConsole.WriteLine(\"Negatif\");\n}"
+  },
+  {
+    "id": "10",
+    "name": "Switch-Case",
+    "description": "Çoklu durum kontrolü.",
+    "example": "switch (sayi)\n{\n\tcase 1:\n\t\tConsole.WriteLine(\"Bir\");\n\t\tbreak;\n\tdefault:\n\t\tConsole.WriteLine(\"Diğer\");\n\t\tbreak;\n}"
+  },
+  {
+    "id": "11",
+    "name": "For Döngüsü",
+    "description": "Belirli sayıda tekrar eden işlemler için kullanılır.",
+    "example": "for (int i = 0; i < 5; i++)\n{\n\tConsole.WriteLine(i);\n}"
+  },
+  {
+    "id": "12",
+    "name": "While Döngüsü",
+    "description": "Şart doğru olduğu sürece çalışır.",
+    "example": "int i = 0;\nwhile (i < 5)\n{\n\tConsole.WriteLine(i);\n\ti++;\n}"
+  },
+  {
+    "id": "13",
+    "name": "Do-While Döngüsü",
+    "description": "Şart yanlış olsa bile en az bir kez çalışır.",
+    "example": "int i = 0;\ndo\n{\n\tConsole.WriteLine(i);\n\ti++;\n} while (i < 5);"
+  },
+  {
+    "id": "14",
+    "name": "Bool Değişken",
+    "description": "Doğru veya yanlış değer tutar.",
+    "example": "bool kontrol = true;\n// Sadece true veya false değerini alır"
+  },
+  {
+    "id": "15",
+    "name": "Karşılaştırma Operatörü (==)",
+    "description": "İki değerin eşitliğini kontrol eder.",
+    "example": "if (sayi == 10)\n{\n\tConsole.WriteLine(\"Eşit\");\n}"
+  },
+  {
+    "id": "16",
+    "name": "Büyük-Küçük Karşılaştırma",
+    "description": "Değerleri büyüklük olarak karşılaştırır.",
+    "example": "if (sayi >= 18)\n{\n\tConsole.WriteLine(\"Yetişkin\");\n}"
+  },
+  {
+    "id": "17",
+    "name": "Mantıksal VE (&&)",
+    "description": "İki şartın da doğru olmasını ister.",
+    "example": "if (yas >= 18 && ehliyetVar)\n{\n\tConsole.WriteLine(\"Kullanabilir\");\n}"
+  },
+  {
+    "id": "18",
+    "name": "Mantıksal VEYA (||)",
+    "description": "Şartlardan biri doğruysa yeterlidir.",
+    "example": "if (admin || moderator)\n{\n\tConsole.WriteLine(\"Yetki var\");\n}"
+  },
+  {
+    "id": "19",
+    "name": "Dizi Tanımlama",
+    "description": "Aynı türden birden fazla veri tutar.",
+    "example": "int[] sayilar = { 10, 20, 30 };\n// [] : Dizi yapısı"
+  },
+  {
+    "id": "20",
+    "name": "Dizi Elemanına Erişim",
+    "description": "Dizideki belirli bir elemana ulaşır.",
+    "example": "int ilkSayi = sayilar[0];\n// 0: İlk elemanın indeksi"
+  },
+  {
+    "id": "21",
+    "name": "Class Tanımı",
+    "description": "Nesnelerin şablonudur.",
+    "example": "class Araba\n{\n\tpublic string marka;\n}"
+  },
+  {
+    "id": "22",
+    "name": "Nesne Oluşturma",
+    "description": "Class’tan gerçek bir nesne üretir.",
+    "example": "Araba araba1 = new Araba();\n// new: Bellekte yeni nesne açar"
+  },
+  {
+    "id": "23",
+    "name": "Property Kullanımı",
+    "description": "Değişkenleri kontrollü kullanmayı sağlar.",
+    "example": "public int Hiz { get; set; }"
+  },
+  {
+    "id": "24",
+    "name": "Metot Tanımlama",
+    "description": "Tekrar kullanılabilir kod bloğudur.",
+    "example": "void SelamVer()\n{\n\tConsole.WriteLine(\"Merhaba\");\n}"
+  },
+  {
+    "id": "25",
+    "name": "Metot Çağırma",
+    "description": "Tanımlanan metodu çalıştırır.",
+    "example": "SelamVer();"
+  },
+  {
+    "id": "26",
+    "name": "Parametreli Metot",
+    "description": "Dışarıdan veri alarak çalışır.",
+    "example": "void Yazdir(string mesaj)\n{\n\tConsole.WriteLine(mesaj);\n}"
+  },
+  {
+    "id": "27",
+    "name": "Return Kullanımı",
+    "description": "Metottan değer döndürür.",
+    "example": "int Topla(int a, int b)\n{\n\treturn a + b;\n}"
+  },
+  {
+    "id": "28",
+    "name": "List Tanımlama",
+    "description": "Dinamik veri tutar, boyutu değişir.",
+    "example": "List<int> sayilar = new List<int>();"
+  },
+  {
+    "id": "29",
+    "name": "Listeye Eleman Ekleme",
+    "description": "Listeye yeni veri ekler.",
+    "example": "sayilar.Add(10);"
+  },
+  {
+    "id": "30",
+    "name": "Foreach Döngüsü",
+    "description": "Liste veya dizi elemanlarını gezer.",
+    "example": "foreach (int s in sayilar)\n{\n\tConsole.WriteLine(s);\n}"
+  },
+  {
+    "id": "31",
+    "name": "Break",
+    "description": "Döngüyü tamamen durdurur.",
+    "example": "if (i == 5) break;"
+  },
+  {
+    "id": "32",
+    "name": "Continue",
+    "description": "O turu atlayıp devam eder.",
+    "example": "if (i == 2) continue;"
+  },
+  {
+    "id": "33",
+    "name": "Double Değişken",
+    "description": "Ondalıklı sayı tutar.",
+    "example": "double fiyat = 19.99;"
+  },
+  {
+    "id": "34",
+    "name": "DateTime.Now",
+    "description": "Şu anki tarih ve saat.",
+    "example": "DateTime simdi = DateTime.Now;"
+  },
+  {
+    "id": "35",
+    "name": "Math.Abs",
+    "description": "Mutlak değer alır.",
+    "example": "int sonuc = Math.Abs(-10);"
+  },
+  {
+    "id": "36",
+    "name": "Math.Pow",
+    "description": "Üs alma işlemi.",
+    "example": "double sonuc = Math.Pow(2, 3);"
+  },
+  {
+    "id": "37",
+    "name": "Math.Sqrt",
+    "description": "Karekök alır.",
+    "example": "double kok = Math.Sqrt(16);"
+  },
+  {
+    "id": "38",
+    "name": "Math.Round",
+    "description": "Yuvarlama yapar.",
+    "example": "double sonuc = Math.Round(3.6);"
+  },
+  {
+    "id": "39",
+    "name": "Math.Floor",
+    "description": "Aşağı yuvarlar.",
+    "example": "double sonuc = Math.Floor(3.9);"
+  },
+  {
+    "id": "40",
+    "name": "Math.Ceiling",
+    "description": "Yukarı yuvarlar.",
+    "example": "double sonuc = Math.Ceiling(3.1);"
+  },
+  {
+    "id": "41",
+    "name": "Try-Catch",
+    "description": "Hataları yakalar.",
+    "example": "try { int x = int.Parse(\"abc\"); } catch { Console.WriteLine(\"Hata\"); }"
+  },
+  {
+    "id": "42",
+    "name": "ReadKey",
+    "description": "Tuşa basılmasını bekler.",
+    "example": "Console.ReadKey();"
+  },
+  {
+    "id": "43",
+    "name": "ToString",
+    "description": "Değeri metne çevirir.",
+    "example": "string metin = sayi.ToString();"
+  },
+  {
+    "id": "44",
+    "name": "Mod Alma (%)",
+    "description": "Bölümden kalanı verir.",
+    "example": "int kalan = 10 % 3;"
+  },
+  {
+    "id": "45",
+    "name": "Ternary Operator",
+    "description": "Kısa if yapısı.",
+    "example": "string durum = yas >= 18 ? \"Yetişkin\" : \"Çocuk\";"
+  },
+  {
+    "id": "46",
+    "name": "Artırma (++)",
+    "description": "Değeri 1 artırır.",
+    "example": "sayi++;"
+  },
+  {
+    "id": "47",
+    "name": "Azaltma (--)",
+    "description": "Değeri 1 azaltır.",
+    "example": "sayi--;"
+  },
+  {
+    "id": "48",
+    "name": "Toplayarak Atama (+=)",
+    "description": "Üzerine ekler.",
+    "example": "sayi += 5;"
+  },
+  {
+    "id": "49",
+    "name": "Çıkararak Atama (-=)",
+    "description": "Üzerinden çıkarır.",
+    "example": "sayi -= 2;"
+  },
+  {
+    "id": "50",
+    "name": "Çarparak Atama (*=)",
+    "description": "Kendisiyle çarpar.",
+    "example": "sayi *= 3;"
+  },
+  {
+    "id": "51",
+    "name": "Bölerek Atama (/=)",
+    "description": "Kendisine böler.",
+    "example": "sayi /= 2;"
+  },
+  {
+    "id": "52",
+    "name": "Eşit Değil (!=)",
+    "description": "İki değerin farklı olup olmadığını kontrol eder.",
+    "example": "if (a != b) { Console.WriteLine(\"Farklı\"); }"
+  },
+  {
+    "id": "53",
+    "name": "Büyüktür (>)",
+    "description": "Bir değerin diğerinden büyük olup olmadığını kontrol eder.",
+    "example": "if (a > b) { Console.WriteLine(\"a büyük\"); }"
+  },
+  {
+    "id": "54",
+    "name": "Küçüktür (<)",
+    "description": "Bir değerin diğerinden küçük olup olmadığını kontrol eder.",
+    "example": "if (a < b) { Console.WriteLine(\"a küçük\"); }"
+  },
+  {
+    "id": "55",
+    "name": "Büyük veya Eşit (>=)",
+    "description": "Büyük ya da eşit olma durumunu kontrol eder.",
+    "example": "if (puan >= 50) { Console.WriteLine(\"Geçti\"); }"
+  },
+  {
+    "id": "56",
+    "name": "Küçük veya Eşit (<=)",
+    "description": "Küçük ya da eşit olma durumunu kontrol eder.",
+    "example": "if (stok <= 10) { Console.WriteLine(\"Kritik stok\"); }"
+  },
+  {
+    "id": "57",
+    "name": "Mantıksal DEĞİL (!)",
+    "description": "Mantıksal tersini alır.",
+    "example": "if (!aktif) { Console.WriteLine(\"Pasif\"); }"
+  },
+  {
+    "id": "58",
+    "name": "Eşittir (=)",
+    "description": "Bir değişkene değer atar.",
+    "example": "int sayi = 10;\n// = : Atama operatörü"
+  },
+  {
+    "id": "59",
+    "name": "VE (AND) – &&",
+    "description": "Tüm şartların doğru olmasını ister.",
+    "example": "if (yas >= 18 && izinVar) { }"
+  },
+  {
+    "id": "60",
+    "name": "VEYA (OR) – ||",
+    "description": "Şartlardan biri doğruysa yeterlidir.",
+    "example": "if (admin || editor) { }"
+  },
+  {
+    "id": "61",
+    "name": "DateTime.AddDays",
+    "description": "Tarihe gün ekler.",
+    "example": "DateTime yeni = DateTime.Now.AddDays(7);"
+  },
+  {
+    "id": "62",
+    "name": "DateTime.AddHours",
+    "description": "Tarihe saat ekler.",
+    "example": "DateTime yeni = DateTime.Now.AddHours(2);"
+  },
+  {
+    "id": "63",
+    "name": "Length",
+    "description": "Metnin uzunluğunu verir.",
+    "example": "int uzunluk = ad.Length;"
+  }
+]
